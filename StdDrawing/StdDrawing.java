@@ -12,8 +12,9 @@ public class StdDrawing
         Color baseDark = new Color(48,48,48);
         public void paint(Graphics g)
         {
-        
-        
+            setBackground(baseDark);
+            g.setColor(Color.white);
+            g.drawString("Hello World", 10, 10);
         }
     }
 }
