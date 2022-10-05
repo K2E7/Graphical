@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import StdDrawing.*;
 
 public class GUI extends Canvas
 {
@@ -17,14 +18,6 @@ public class GUI extends Canvas
         frame.setTitle("Testing GUI");
         frame.pack();
         frame.setVisible(true);
-    }
-
-    public void paint(Graphics g) 
-    {
-        setBackground(Color.YELLOW);
-        g.setColor(Color.BLUE);
-        g.fillOval(0, 0, 100, 100);
-        g.drawString("Arnab", 200, 200);
     }
     
     public static void main(String args[])
