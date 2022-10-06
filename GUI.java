@@ -1,13 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
-import StdDrawing.*;
+//import StdDrawing.*;
 
-public class GUI extends Canvas
+public class GUI
 {
-    StdDrawing std;
+    //StdDrawing std;
     public GUI()
     {
-        std = new StdDrawing();
+        UX ux = new UX();
+        ux.setSize(800,800);
         
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
@@ -27,4 +28,20 @@ public class GUI extends Canvas
         new GUI();
         
     }
-}
+
+    //--------------------------------------------------------------------------------------------------------------
+    public class UX extends Canvas
+    {
+        int originX, originY;
+        int height, width;
+    // font
+
+        public void paint(Graphics g) 
+        {
+            g.setColor(Color.BLACK);
+            Font font = new Font("Arial", Font.PLAIN, 20);
+            g.setFont(font);
+            g.drawString("Hello", 40, 40);
+        }
+    }
+}   
