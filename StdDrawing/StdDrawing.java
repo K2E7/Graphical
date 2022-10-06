@@ -2,10 +2,10 @@ package StdDrawing;
 
 import java.awt.*;
 
-public class StdDrawing
+public class StdDrawing extends Canvas
 {
-    public class Grid extends Canvas
-    {
+    //public class Grid extends Canvas
+    //{
         int originX, originY;
         int height, width;
 
@@ -16,5 +16,5 @@ public class StdDrawing
             g.setColor(Color.white);
             g.drawString("Hello World", 10, 10);
         }
-    }
+    //}
 }

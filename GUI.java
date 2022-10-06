@@ -4,9 +4,11 @@ import StdDrawing.*;
 
 public class GUI extends Canvas
 {
-    
+    StdDrawing std;
     public GUI()
     {
+        std = new StdDrawing();
+        
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
 
